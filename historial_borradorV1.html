@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Reel - Historial de Películas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Estilos de la tabla; se integran con la hoja de estilos de la plantilla. */
+        .tabla-peliculas {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .tabla-peliculas th,
+        .tabla-peliculas td {
+            padding: 0.9rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .tabla-peliculas th {
+            background: #222;
+            color: #fff;
+        }
+        .tabla-peliculas tbody tr:nth-child(even) {
+            background: #f3f3f3;
+        }
+        .tabla-peliculas tbody tr:hover {
+            background: #e9d9ac;
+        }
+
+        /* Navegación por teclado: cada celda se puede alcanzar con TAB. */
+        .tabla-peliculas th:focus-visible,
+        .tabla-peliculas td:focus-visible {
+            outline: 3px solid #9a6b16;
+            outline-offset: -3px;
+            background: #fff2cf;
+        }
+        .tabla-contenedor {
+            width: 100%;
+            overflow-x: auto;
+        }
+        @media (max-width: 600px) {
+            .tabla-peliculas th,
+            .tabla-peliculas td {
+                padding: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Daily Reel</h1>
+        <p>Películas para cada momento de la actualidad.</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="pelicula.html">Recomendación</a>
+            <a href="formulario.html">Recomendar Pelicula</a>
+            <a href="historial.html" aria-current="page">Historial de Películas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Historial de Películas</h2>
+            <p>Consulta las películas recomendadas y descubre nuestras selecciones.</p>
+            <div class="tabla-contenedor">
+                <table class="tabla-peliculas">
+                    <thead>
+                        <tr>
+                            <th scope="col" tabindex="0">Título Película</th>
+                            <th scope="col" tabindex="0">Director</th>
+                            <th scope="col" tabindex="0">Género</th>
+                            <th scope="col" tabindex="0">Fecha Recomendada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Interstellar</td>
+                            <td tabindex="0">Christopher Nolan</td>
+                            <td tabindex="0">Ciencia Ficción</td>
+                            <td tabindex="0"><time datetime="2026-09-28">28 Sep 2026</time></td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Moneyball</td>
+                            <td tabindex="0">Bennett Miller</td>
+                            <td tabindex="0">Deporte</td>
+                            <td tabindex="0"><time datetime="2026-09-28">28 Sep 2026</time></td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">The Social Network</td>
+                            <td tabindex="0">David Fincher</td>
+                            <td tabindex="0">Tecnología</td>
+                            <td tabindex="0"><time datetime="2026-09-28">28 Sep 2026</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>The Daily Reel - Proyecto LMSGI | <a href="contacto.html">Contacto</a></p>
+    </footer>
+</body>
+</html>

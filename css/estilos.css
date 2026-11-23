@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: #eeeeee;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-bottom: 3px solid #e0a800;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    color: #bbbbbb;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #e0a800;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1c1c1c;
+}
+
+section,
+article {
+    margin-bottom: 35px;
+    padding: 20px;
+    border: 1px solid #444;
+}
+
+h2 {
+    color: #e0a800;
+}
+
+h3 {
+    color: #f0c84b;
+}
+
+a {
+    color: #e0a800;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+    border-top: 1px solid #333;
+}
+
+
+/* IMÁGENES RESPONSIVE */
+
+.imagen-responsive {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+/* TABLETS */
+
+@media screen and (max-width: 768px) {
+    .imagen-responsive {
+        max-width: 100%;
+    }
+}
+
+/* MÓVILES */
+
+@media screen and (max-width: 480px) {
+    .imagen-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+

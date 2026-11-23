@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendar Película - The Daily Reel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Cabecera y Menú de navegación -->
+    <header class="header">
+        <a href="index.html" class="logo">The Daily Reel</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="peliculas.html">Películas</a>
+        <a href="pelicula.html">Recomendación</a>
+        <a href="formulario.html">Recomendar Pelicula</a>
+        <a href="historial.html">Historial de Películas</a>
+    </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-container">
+        <section class="form-section">
+            <h1>Recomendar una Película</h1>
+            <p>¿Conoces alguna película relevante para la actualidad? Cuéntanoslo y la analizaremos.</p>
+
+            <form action="#" method="post" class="custom-form">
+                
+                <!-- Campo: Título de la película -->
+                <div class="form-group">
+                    <label for="titulo">Título de la película <span class="required">:</span></label>
+                    <input 
+                        type="text" 
+                        id="titulo" 
+                        name="titulo" 
+                        placeholder="Ej. Interstellar" 
+                        required
+                    >
+                </div>
+<br>
+                <!-- Campo: Género -->
+                <div class="form-group">
+                    <label for="genero">Género <span class="required">:</span></label>
+                    <input 
+                        type="text" 
+                        id="genero" 
+                        name="genero" 
+                        placeholder="Ej. Ciencia ficción, Drama..." 
+                        required
+                    >
+                </div>
+<br>
+                <!-- Campo: Motivo de recomendación -->
+                <div class="form-group">
+                    <label for="motivo">Motivo de recomendació: <br><br><span class="required"></span></label>
+                    <textarea 
+                        id="motivo" 
+                        name="motivo" 
+                        rows="5" 
+                        placeholder="Explica por qué esta película conecta con la actualidad..." 
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="btn-submit">Enviar recomendación</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>The Daily Reel - Proyecto LMSGI | <a href="contacto.html">Contacto</a></p>
+    </footer>
+
+</body>
+</html>
